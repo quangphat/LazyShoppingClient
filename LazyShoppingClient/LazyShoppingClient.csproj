@@ -54,6 +54,7 @@
     <None Remove="ClientApp\App\Utils.tsx" />
     <None Remove="ClientApp\components\ArticleItem\ArticleItem.tsx" />
     <None Remove="ClientApp\components\ArticleView\ArticleView.tsx" />
+    <None Remove="ClientApp\components\CreatePostBox\CreatePostBox.tsx" />
     <None Remove="ClientApp\components\StartItem\StartItem.tsx" />
     <None Remove="ClientApp\components\TourGuide\TourGuide.tsx" />
     <None Remove="ClientApp\CoreComponents\Badge\Badge.tsx" />
@@ -141,6 +142,7 @@
     <TypeScriptCompile Include="ClientApp\App\Register\RecommendTags.tsx" />
     <TypeScriptCompile Include="ClientApp\App\Register\Register.tsx" />
     <TypeScriptCompile Include="ClientApp\App\Test\Test.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\CreatePostBox\CreatePostBox.tsx" />
     <TypeScriptCompile Include="ClientApp\components\TourGuide\TourGuide.tsx" />
     <TypeScriptCompile Include="ClientApp\components\StartItem\StartItem.tsx" />
     <TypeScriptCompile Include="ClientApp\components\FeedPreview\FeedPreview.tsx" />
