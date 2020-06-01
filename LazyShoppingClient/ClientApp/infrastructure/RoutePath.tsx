@@ -25,6 +25,7 @@ export const Path = {
         return `/article/${id}`
     },
     register: '/register',
+    login: '/login',
     legal_term: '/legal/terms',
     recommend_tags: '/recommend_tags',
     article_by_tags: '/tags',

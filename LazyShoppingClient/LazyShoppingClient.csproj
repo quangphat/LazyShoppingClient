@@ -41,6 +41,7 @@
     <None Remove="ClientApp\App\Layout\Layout.tsx" />
     <None Remove="ClientApp\App\Layout\LayoutHeader.tsx" />
     <None Remove="ClientApp\App\Legal\Term.tsx" />
+    <None Remove="ClientApp\App\Login\Login.tsx" />
     <None Remove="ClientApp\App\Profile\ArticleList.tsx" />
     <None Remove="ClientApp\App\Profile\Experience.tsx" />
     <None Remove="ClientApp\App\Profile\ExperienceItem.tsx" />
@@ -54,6 +55,7 @@
     <None Remove="ClientApp\components\ArticleItem\ArticleItem.tsx" />
     <None Remove="ClientApp\components\ArticleView\ArticleView.tsx" />
     <None Remove="ClientApp\components\StartItem\StartItem.tsx" />
+    <None Remove="ClientApp\components\TourGuide\TourGuide.tsx" />
     <None Remove="ClientApp\CoreComponents\Badge\Badge.tsx" />
     <None Remove="ClientApp\components\BigTag\BigTag.tsx" />
     <None Remove="ClientApp\components\CategoryTree\CategoryTree.tsx" />
@@ -135,9 +137,11 @@
     <TypeScriptCompile Include="ClientApp\App\Profile\Experience.tsx" />
     <TypeScriptCompile Include="ClientApp\App\Profile\ExperienceItem.tsx" />
     <TypeScriptCompile Include="ClientApp\App\Profile\Profile.tsx" />
+    <TypeScriptCompile Include="ClientApp\App\Login\Login.tsx" />
     <TypeScriptCompile Include="ClientApp\App\Register\RecommendTags.tsx" />
     <TypeScriptCompile Include="ClientApp\App\Register\Register.tsx" />
     <TypeScriptCompile Include="ClientApp\App\Test\Test.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\TourGuide\TourGuide.tsx" />
     <TypeScriptCompile Include="ClientApp\components\StartItem\StartItem.tsx" />
     <TypeScriptCompile Include="ClientApp\components\FeedPreview\FeedPreview.tsx" />
     <TypeScriptCompile Include="ClientApp\components\ArticleItem\ArticleItem.tsx" />

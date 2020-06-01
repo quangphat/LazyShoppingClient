@@ -7,6 +7,7 @@ export { CreateArticle } from './Article/CreateArticle';
 export { UpdateArticle } from './Article/UpdateArticle';
 export { ArticlesByTags } from './Article/ArticlesByTags';
 export { Register } from './Register/Register';
+export { Login } from './Login/Login';
 export { RecommendTags } from './Register/RecommendTags';
 export { Profile } from './Profile/Profile';
 export { SearchResult } from './Global/SearchResult';

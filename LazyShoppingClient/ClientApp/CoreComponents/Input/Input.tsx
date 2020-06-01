@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as classnames from 'classnames';
 import './index.css';
 
-export declare type typeInput = 'text' | 'number' | 'password';
+export declare type typeInput = 'text' | 'number' | 'password' |'email';
 export declare type typeClass = 'string' | 'money' | 'number';
 
 interface IInputProps {

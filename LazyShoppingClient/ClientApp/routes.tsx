@@ -50,7 +50,8 @@ export const routes = <React.Fragment>
             <RouteWithLayout exact path={RoutePath.Path.article_detail()} layout={App.Layout} component={App.ArticleDetail} />
             <RouteWithLayout exact path={RoutePath.Path.article_by_tags} layout={App.Layout} component={App.ArticlesByTags} />
             <RouteWithLayout exact path={RoutePath.Path.article_edit()} layout={App.Layout}  component={App.UpdateArticle} />
-            <RouteWithLayout exact path={RoutePath.Path.register} layout={App.Layout}  component={App.Register} />
+            <RouteWithLayout exact path={RoutePath.Path.register} layout={App.Layout} component={App.Register} />
+            <RouteWithLayout exact path='/login' layout={App.EmptyLayout} component={App.Login} />
             <RouteWithLayout exact path={RoutePath.Path.recommend_tags} layout={App.Layout} component={App.RecommendTags} />
             <RouteWithLayout exact path={RoutePath.Path.profile()} layout={App.Layout} component={App.Profile} />
             <RouteWithLayout exact path={RoutePath.Path.search_global} layout={App.Layout} component={App.SearchResult} />

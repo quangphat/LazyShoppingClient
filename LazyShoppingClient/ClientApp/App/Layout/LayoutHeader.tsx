@@ -60,10 +60,8 @@ export class LayoutHeader extends React.Component<LayoutHeaderProps, LayoutHeade
         return <div className="w3l-bootstrap-header fixed-top">
             <nav className="navbar navbar-expand-lg navbar-light p-2">
                 <div className="container">
-                    <a className="navbar-brand" href="index.html"><span className="fa fa-diamond"></span>Market</a>
-                    <a className="navbar-brand" href="#index.html">
-                       
-                    </a>
+                    <a className="navbar-brand" href="index.html"><span className="fa fa-diamond"></span>Lazy</a>
+                    
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -81,10 +79,10 @@ export class LayoutHeader extends React.Component<LayoutHeaderProps, LayoutHeade
                                 <a className="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
-                        <div className="form-inline">
+                        {!isLogin && <div className="form-inline">
                             <a href="#login.html" className="login mr-4">Log in</a>
                             <a href="#signup.html" className="btn btn-primary btn-theme">Create Free Account</a>
-                        </div>
+                        </div>}
                     </div>
                 </div>
             </nav>

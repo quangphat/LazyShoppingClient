@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 import { RouteComponentProps } from 'react-router';
-import { ArticleItem, StartItem } from '../../components'
+import { ArticleItem, StartItem, TourGuide } from '../../components'
 import { Button } from '../../CoreComponents'
 import * as Models from '../../Models'
 import * as Utils from '../../infrastructure/Utils'
@@ -9,6 +9,7 @@ import { ArticleRepository } from '../../repositories/ArticleRepository'
 interface HomeStates {
     articles: Models.IArticle[],
     paging: Models.IPaging,
+    isLogin: boolean
 }
 export class Home extends React.Component<RouteComponentProps<any>, HomeStates> {
     constructor(props: any) {
@@ -16,6 +17,7 @@ export class Home extends React.Component<RouteComponentProps<any>, HomeStates> 
 
         this.state = {
             articles: [],
+            isLogin: Utils.isLogin(),
             paging: { page: 1, limit: 10, totalRecord: 0, hasMore: false } as Models.IPaging
         };
 
@@ -54,25 +56,9 @@ export class Home extends React.Component<RouteComponentProps<any>, HomeStates> 
         </div>
     }
     public render() {
-
+        let { isLogin } = this.state
         return <div className="home pd_lr_110">
-            <section className="w3l-index-block5">
-                <div className="section-info py-5">
-                    <div className="container py-md-3">
-                        <div className="row cwp17-two align-items-center">
-                            <div className="col-md-6 cwp17-image">
-                                <img src="assets/images/business.png" className="img-fluid" alt=""/>
-        </div>
-                                <div className="col-md-6 cwp17-text">
-                                    <h2>Chỉ 3 bước đơn giản để bắt đầu</h2>
-                                    <p>Nhấn tiếp tục để tìm hiểu thêm nhé!. </p>
-                                    
-                                </div>
-                        </div>
-                        <a href="#signup.html" style={{ float: "right" }}>Tiếp tục »</a>
-                        </div>
-                    </div>
-            </section>
+            {!isLogin && <TourGuide />}
         </div>
     }
 }
