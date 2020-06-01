@@ -110,11 +110,6 @@
 .text-black{
     color:#000!important;
 }
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none!important;
-}
 .btn {
     border: 1px solid transparent;
     cursor: pointer;

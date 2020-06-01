@@ -53,6 +53,7 @@
     <None Remove="ClientApp\App\Utils.tsx" />
     <None Remove="ClientApp\components\ArticleItem\ArticleItem.tsx" />
     <None Remove="ClientApp\components\ArticleView\ArticleView.tsx" />
+    <None Remove="ClientApp\components\StartItem\StartItem.tsx" />
     <None Remove="ClientApp\CoreComponents\Badge\Badge.tsx" />
     <None Remove="ClientApp\components\BigTag\BigTag.tsx" />
     <None Remove="ClientApp\components\CategoryTree\CategoryTree.tsx" />
@@ -104,12 +105,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\assets\webfonts\fa-brands-400.svg" />
-    <None Include="wwwroot\assets\webfonts\fa-brands-400.woff2" />
-    <None Include="wwwroot\assets\webfonts\fa-regular-400.svg" />
-    <None Include="wwwroot\assets\webfonts\fa-regular-400.woff2" />
-    <None Include="wwwroot\assets\webfonts\fa-solid-900.svg" />
-    <None Include="wwwroot\assets\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\assets\fonts\fontawesome-webfont.woff2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -141,6 +138,7 @@
     <TypeScriptCompile Include="ClientApp\App\Register\RecommendTags.tsx" />
     <TypeScriptCompile Include="ClientApp\App\Register\Register.tsx" />
     <TypeScriptCompile Include="ClientApp\App\Test\Test.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\StartItem\StartItem.tsx" />
     <TypeScriptCompile Include="ClientApp\components\FeedPreview\FeedPreview.tsx" />
     <TypeScriptCompile Include="ClientApp\components\ArticleItem\ArticleItem.tsx" />
     <TypeScriptCompile Include="ClientApp\components\ArticleView\ArticleView.tsx" />

@@ -57,52 +57,37 @@ export class LayoutHeader extends React.Component<LayoutHeaderProps, LayoutHeade
     public render() {
         let isLogin = Utils.isLogin();
         let { account } = this.state
-        return <header className="master-header">
-            <div className="container">
-                <div className="navbar navbar-default">
+        return <div className="w3l-bootstrap-header fixed-top">
+            <nav className="navbar navbar-expand-lg navbar-light p-2">
+                <div className="container">
+                    <a className="navbar-brand" href="index.html"><span className="fa fa-diamond"></span>Market</a>
+                    <a className="navbar-brand" href="#index.html">
+                       
+                    </a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
 
-                    <div className="logo">
-                        <NavLink to="/">
-                            greencode
-                        </NavLink>
-
-                    </div>
-                    <div className="toolbox">
-
-                        <Input placeholder='Tìm kiếm'
-                            ref={component => this.ref_txtSearch = component}
-                            prefix={<CreateSVG size={18} svgName='iconSearch' />}
-                            onKeyUp={(e) => this.onSearch(e)}
-                        />
-                    </div>
-                    <div className="user_info">
-                        {isLogin == false ? <div className="right-menu">
-                            <span className="mx-lg-4 mx-md-2  mx-1">
-                                <Input value={account != null ? account.email : ''}
-                                    onChange={(e) => this.setState({ account: { ...this.state.account, email: e.target.value } })} />
-                            </span>
-                            <span>
-                                <Input type="password" value={account != null ? account.password : ''}
-                                    onChange={(e) => this.setState({ account: { ...this.state.account, password: e.target.value } })} />
-                            </span>
-                            <Button type="primary" onClick={() => this.Login()}>Login </Button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="about.html">About</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div className="form-inline">
+                            <a href="#login.html" className="login mr-4">Log in</a>
+                            <a href="#signup.html" className="btn btn-primary btn-theme">Create Free Account</a>
                         </div>
-                            : <div className="top-forms text-center mt-lg-3 mt-md-1 mt-0">
-                                <span>Welcome Back!</span>
-                                <span className="mx-lg-4 mx-md-2  mx-1">
-                                    <a href="login.html">
-                                        {account.displayName}
-                                    </a>
-                                </span>
-                                {!Utils.isLogin() && <span>
-                                    <NavLink to={RoutePath.Path.register}>
-                                        <i className="far fa-user"></i> Register
-                                </NavLink>
-                                </span>}
-                            </div>}
                     </div>
                 </div>
-            </div>
-        </header>
+            </nav>
+        </div>
     }
 }
