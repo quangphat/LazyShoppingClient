@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 import { RouteComponentProps } from 'react-router';
-import { ArticleItem, StartItem, TourGuide } from '../../components'
+import { ArticleItem, StartItem, TourGuide, CreatePostBox } from '../../components'
 import { Button } from '../../CoreComponents'
 import * as Models from '../../Models'
 import * as Utils from '../../infrastructure/Utils'
@@ -58,6 +58,7 @@ export class Home extends React.Component<RouteComponentProps<any>, HomeStates> 
     public render() {
         let { isLogin } = this.state
         return <div className="home pd_lr_110">
+            <CreatePostBox />
             {!isLogin && <TourGuide />}
         </div>
     }
